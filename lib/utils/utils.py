@@ -84,7 +84,7 @@ def save_checkpoint(states, is_best, output_dir,
                    os.path.join(output_dir, 'model_best.pth'))
 
 
-def get_model_summary(model, *input_tensors, item_length=26, verbose=False):
+def get_model_summary(model, item_length=26, verbose=False,*input_tensors):
     """
     :param model:
     :param input_tensors:
